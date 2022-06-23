@@ -12,7 +12,7 @@ const menuController = {
                 if (!menuEncontrado){
                     res.send("No se encuentra el menu");
                 }
-                else {res.render( "index",  {menu: menuEncontrado} );
+                else {res.render( "detalleMenu",  {menu: menuEncontrado} );
                 }
                 }, 
     agregarOpcionMenu: (req, res) => {res.send("se ha agregado una opcion al menu");},

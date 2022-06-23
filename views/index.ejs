@@ -37,7 +37,7 @@
     <div class="ps-content">
 
     <%- include("./partials/about.ejs") %>
-    
+
     <hr />
       <!-- Menu Section -->
       <div class="ps-row ps-padding-64" id="menu">
@@ -45,7 +45,8 @@
           <h1 class="ps-center">Nuentro Menu</h1>
           <br />
         <% opciones.forEach(function(menu){%>
-        <h4 style="display: block"><%= menu.nombre %><br><%= menu.descripcion %><br><%= menu.precio %>
+        <h4 style="display: block">
+          <a href="/detalleMenu/<%= menu.id%>" style="text-decoration:none ;"><%= menu.nombre %><br></a><%= menu.descripcion %><br><%= menu.precio %></a>
         <% }); %></h4>
           
         </div>
