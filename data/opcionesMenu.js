@@ -26,6 +26,13 @@ const opcionesMenu = [
         descripcion: "Espárragos blancos con vinagreta de verduras y jamón ibérico",
         precio: " U$S 37.50"
     }
+    ,
+    {
+        id: 5,
+        nombre: "Papas Fritas",
+        descripcion: "Espárragos blancos con vinagreta de verduras y jamón ibérico",
+        precio: " U$S 37.50"
+    }
 ];
 
 module.exports = opcionesMenu;
