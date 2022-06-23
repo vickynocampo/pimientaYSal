@@ -30,8 +30,8 @@ const opcionesMenu = [
     {
         id: 5,
         nombre: "Papas Fritas",
-        descripcion: "Espárragos blancos con vinagreta de verduras y jamón ibérico",
-        precio: " U$S 37.50"
+        descripcion: "Papas rusticas con hierbas",
+        precio: " U$S 22.50"
     }
 ];
 
