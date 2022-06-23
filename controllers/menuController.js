@@ -1,9 +1,6 @@
 const opcionesMenu = require("../data/opcionesMenu")
-
 const menuController = {
-
     listMenu : (req, res) =>{res.render("index", { opciones: opcionesMenu})},
-    
     menuPorId : (req, res) => {
                 const menuId = parseInt(req.params.id, 10);
                 let menuEncontrado; 
@@ -15,13 +12,10 @@ const menuController = {
                 if (!menuEncontrado){
                     res.send("No se encuentra el menu");
                 }
-                else {
-                    res.render( "index",  {menu: menuEncontrado} );
+                else {res.render( "index",  {menu: menuEncontrado} );
                 }
                 }, 
-
     agregarOpcionMenu: (req, res) => {res.send("se ha agregado una opcion al menu");},
-
     borrarOpcionMenu: (req, res) => {
         const menuId = parseInt(req.params.id, 10);
         for (let i = 0; i < opcionesMenu.length; i++) {
